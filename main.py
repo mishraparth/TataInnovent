@@ -57,7 +57,7 @@ def process_voice_command():
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening for a command (e.g., 'enable alert' or 'disable alert')...")
-        r.pause_threshold = 1.5
+        r.pause_threshold = 1.6
         audio = r.listen(source)
 
     try:
